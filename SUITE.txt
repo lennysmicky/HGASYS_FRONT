@@ -1,0 +1,146 @@
+ PLAN COMPLET DU FRONTEND - Liste des composants par rôle
+🔴 PHASE 1 : FONDATION (FAIT ✅)
+Fichier	Status	Description
+tailwind.config.js	✅	Configuration Tailwind
+src/index.css	✅	Styles globaux
+src/styles/variables.css	✅	Variables CSS
+src/styles/global.css	✅	Styles additionnels
+src/styles/components.css	✅	Styles composants
+src/styles/auth.css	✅	Styles authentification
+src/utils/constants.js	✅	Constantes globales
+src/utils/helpers.js	✅	Fonctions utilitaires
+src/utils/rbac.js	✅	Gestion des permissions
+src/utils/validators.js	✅	Validateurs
+src/utils/formatters.js	✅	Formateurs
+src/services/api.js	✅	Configuration Axios
+src/services/authService.js	✅	Service authentification
+src/services/userService.js	✅	Service utilisateurs
+src/services/employeeService.js	✅	Service employés
+src/services/clientService.js	✅	Service clients
+src/services/vehicleService.js	✅	Service véhicules
+src/services/saleService.js	✅	Service ventes
+src/context/AuthContext.jsx	✅	Contexte auth
+src/hooks/useAuth.js	✅	Hook auth
+src/hooks/useForm.js	✅	Hook formulaires
+src/config/menuItems.js	✅	Configuration menus
+src/config/routes.jsx	✅	Configuration routes
+🟠 PHASE 2 : LAYOUT (À FAIRE)
+Fichier	Priorité	Description
+src/components/layout/Sidebar.jsx	🔴 Haute	Barre latérale navigation
+src/components/layout/Topbar.jsx	🔴 Haute	Barre supérieure
+src/components/layout/MainLayout.jsx	🔴 Haute	Layout principal
+src/components/layout/Breadcrumbs.jsx	🟡 Moyenne	Fil d'ariane
+src/components/layout/Footer.jsx	🟢 Basse	Pied de page
+🟡 PHASE 3 : COMPOSANTS COMMUNS (À FAIRE)
+Fichier	Priorité	Description
+src/components/common/Button.jsx	✅	Bouton
+src/components/common/LoadingSpinner.jsx	✅	Spinner
+src/components/common/Card.jsx	🔴 Haute	Carte
+src/components/common/Modal.jsx	🔴 Haute	Modal
+src/components/common/ConfirmDialog.jsx	🔴 Haute	Dialogue confirmation
+src/components/common/PageHeader.jsx	🔴 Haute	En-tête de page
+src/components/common/StatusBadge.jsx	🟡 Moyenne	Badge de statut
+src/components/common/SearchBar.jsx	🟡 Moyenne	Barre de recherche
+src/components/common/EmptyState.jsx	🟡 Moyenne	État vide
+🟢 PHASE 4 : COMPOSANTS FORMULAIRES (À FAIRE)
+Fichier	Priorité	Description
+src/components/forms/InputField.jsx	✅	Champ texte
+src/components/forms/SelectField.jsx	🔴 Haute	Champ select
+src/components/forms/DateField.jsx	🔴 Haute	Champ date
+src/components/forms/FileUpload.jsx	🟡 Moyenne	Upload fichier
+src/components/forms/FormActions.jsx	🟡 Moyenne	Boutons formulaire
+🔵 PHASE 5 : TABLES (À FAIRE)
+Fichier	Priorité	Description
+src/components/tables/DataTable.jsx	🔴 Haute	Table générique (MUI DataGrid)
+🟣 PHASE 6 : PAGES AUTH (À FAIRE)
+Fichier	Priorité	Description
+src/pages/auth/Login.jsx	✅	Connexion
+src/pages/auth/Register.jsx	🟡 Moyenne	Inscription
+src/pages/auth/ForgotPassword.jsx	🟡 Moyenne	Mot de passe oublié
+src/pages/auth/ResetPassword.jsx	🟡 Moyenne	Réinitialisation
+⚫ PHASE 7 : PAGES PRINCIPALES (À FAIRE)
+Fichier	Priorité	Rôles qui voient
+DASHBOARD		
+src/pages/dashboard/Dashboard.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/dashboard/DashboardWidgets.jsx	🔴 Haute	Admin, Manager, Employee
+VÉHICULES		
+src/pages/vehicles/VehicleList.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/vehicles/VehicleForm.jsx	🔴 Haute	Admin, Manager
+src/pages/vehicles/VehicleDetails.jsx	🟡 Moyenne	Admin, Manager, Employee
+src/pages/vehicles/VehicleStock.jsx	🟡 Moyenne	Admin, Manager
+CLIENTS		
+src/pages/clients/ClientList.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/clients/ClientForm.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/clients/ClientDetails.jsx	🟡 Moyenne	Admin, Manager, Employee
+VENTES		
+src/pages/sales/SaleList.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/sales/SaleForm.jsx	🔴 Haute	Admin, Manager, Employee
+src/pages/sales/SaleDetails.jsx	🟡 Moyenne	Admin, Manager, Employee
+src/pages/sales/Invoice.jsx	🟡 Moyenne	Admin, Manager, Employee
+EMPLOYÉS		
+src/pages/employees/EmployeeList.jsx	🔴 Haute	Admin, Manager
+src/pages/employees/EmployeeForm.jsx	🔴 Haute	Admin, Manager
+src/pages/employees/EmployeeDetails.jsx	🟡 Moyenne	Admin, Manager
+RH		
+src/pages/hr/Attendance.jsx	🟡 Moyenne	Admin, Manager
+src/pages/hr/Leaves.jsx	🟡 Moyenne	Admin, Manager, Employee (propres)
+src/pages/hr/LeaveForm.jsx	🟡 Moyenne	Admin, Manager, Employee
+src/pages/hr/Salaries.jsx	🟡 Moyenne	Admin, Manager
+UTILISATEURS		
+src/pages/users/UserList.jsx	🔴 Haute	Admin
+src/pages/users/UserForm.jsx	🔴 Haute	Admin
+src/pages/users/UserDetails.jsx	🟡 Moyenne	Admin
+RAPPORTS		
+src/pages/reports/Reports.jsx	🟢 Basse	Admin, Manager
+src/pages/reports/SalesReport.jsx	🟢 Basse	Admin, Manager
+src/pages/reports/FinancialReport.jsx	🟢 Basse	Admin, Manager
+PARAMÈTRES		
+src/pages/settings/Settings.jsx	🟢 Basse	Admin
+src/pages/settings/Profile.jsx	🟢 Basse	Admin, Manager, Employee
+src/pages/settings/CompanySettings.jsx	🟢 Basse	Admin
+ERREURS		
+src/pages/errors/NotFound.jsx	✅	Tous
+src/pages/errors/Unauthorized.jsx	🔴 Haute	Tous
+🎨 PHASE 8 : GRAPHIQUES (À FAIRE)
+Fichier	Priorité	Description
+src/components/charts/SalesChart.jsx	🟡 Moyenne	Graphique ventes
+src/components/charts/RevenueChart.jsx	🟡 Moyenne	Graphique revenus
+src/components/charts/StockChart.jsx	🟡 Moyenne	Graphique stock
+src/components/charts/PieChart.jsx	🟡 Moyenne	Camembert
+src/components/charts/BarChart.jsx	🟡 Moyenne	Barres
+📊 Résumé par rôle - Ce que chaque utilisateur peut voir
+👑 ADMIN (Accès complet)
+
+    ✅ Dashboard complet
+    ✅ Véhicules (CRUD complet)
+    ✅ Clients (CRUD complet)
+    ✅ Ventes (CRUD + approbation)
+    ✅ Employés (CRUD complet)
+    ✅ RH (Présences, Congés, Salaires)
+    ✅ Utilisateurs (CRUD complet)
+    ✅ Rapports (tous)
+    ✅ Paramètres (tous)
+
+👔 MANAGER
+
+    ✅ Dashboard complet
+    ✅ Véhicules (CRUD complet)
+    ✅ Clients (CRUD complet)
+    ✅ Ventes (CRUD + approbation)
+    ✅ Employés (lecture + création)
+    ✅ RH (Présences, Congés avec approbation)
+    ❌ Utilisateurs
+    ✅ Rapports (tous)
+    ❌ Paramètres admin
+
+👷 EMPLOYEE
+
+    ✅ Dashboard (basique)
+    ✅ Véhicules (lecture seule)
+    ✅ Clients (CRUD)
+    ✅ Ventes (création)
+    ❌ Employés
+    ✅ RH (ses propres congés)
+    ❌ Utilisateurs
+    ❌ Rapports
+    ✅ Profil personnel

@@ -12,6 +12,7 @@ import './styles/variables.css';
 import './styles/global.css';
 import './styles/components.css';
 import './styles/auth.css';
+import './styles/layout.css';  // <-- Ajouter cette ligne
 
 // React Toastify
 import { ToastContainer } from 'react-toastify';

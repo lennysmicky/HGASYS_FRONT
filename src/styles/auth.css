@@ -365,3 +365,59 @@
     font-size: 1.125rem;
   }
 }
+/* ===== PASSWORD INFO ===== */
+.auth-password-info {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: -0.5rem;
+}
+
+.auth-password-info p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.auth-password-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.auth-password-info li {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.auth-password-info li::before {
+  content: '○';
+  font-size: 0.5rem;
+  color: #cbd5e1;
+}
+
+.auth-password-info li.valid {
+  color: var(--color-success);
+}
+
+.auth-password-info li.valid::before {
+  content: '●';
+  color: var(--color-success);
+}
+
+/* ===== REGISTER SPECIFIC ===== */
+.auth-form-register {
+  gap: 0.875rem;
+}
+
+.auth-form-register .form-group {
+  margin-bottom: 0;
+}
