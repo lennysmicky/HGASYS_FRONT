@@ -134,3 +134,111 @@ frontend/
 ├── vite.config.js
 ├── .env
 └── .gitignore
+
+Présentation Générale
+HGA est un système ERP destiné à une entreprise de vente de voitures. Il permet la gestion complète des utilisateurs, employés, clients, ventes et opérations internes.
+Architecture Technique
+Frontend: React
+Backend: Node.js (Express)
+Base de données: MongoDB
+Architecture: Client-Server avec API REST sécurisée (JWT)
+Modules Fonctionnels
+3.1 Gestion des utilisateurs (IAM)
+
+Rôles: Admin, Manager, Employé
+Authentification JWT
+Permissions RBAC
+3.2 Gestion des employés
+Dossiers RH
+Présence
+Salaires
+Congés
+3.3 Gestion des clients (CRM)
+Informations clients
+Historique interactions
+Facturation
+3.4 Dashboard & Analytics
+Statistiques en temps réel
+Graphiques
+Reporting
+3.5 Modules métier automobile
+Gestion des véhicules
+Stock
+Ventes
+Logistique
+
+Modèles de données
+User: name, email, password, role
+Employee: name, position, salary
+Client: name, contact
+Vehicle: marque, modèle, prix, stock
+Workflow
+Login
+Accès dashboard
+Gestion modules
+Interaction avec API
+Mise à jour base de données
+Plan de développement (3 jours)
+Jour 1: Setup + Auth
+Jour 2: CRUD employés + clients
+Jour 3: Dashboard + finition
+HGA
+Vision du Système
+HGA est un ERP complet pour une entreprise de vente de véhicules. Il centralise la gestion des utilisateurs, employés, clients, ventes, stock et opérations métiers.
+Architecture Complète
+Frontend: React (UI)
+Backend: Node.js + Express (API REST)
+Database: MongoDB
+Sécurité: JWT + RBAC
+Architecture: Client-Server avec séparation des responsabilités
+Modules Fonctionnels
+
+Gestion des utilisateurs (IAM): rôles Admin, Manager, Employé, permissions RBAC
+Gestion RH: employés, salaires, présence, congés
+CRM: clients, interactions, facturation
+Dashboard: statistiques, graphiques, reporting
+Gestion véhicules: stock, modèles, prix
+Ventes: commandes, factures, historique
+Logistique: livraison, disponibilité
+Comptabilité: revenus, dépenses
+
+Architecture Backend (Structure)
+controllers/: logique métier
+models/: schémas MongoDB
+routes/: API endpoints
+middleware/: auth, sécurité
+config/: DB, JWT
+server.js: point d’entrée
+Architecture Frontend (React)
+components/: UI réutilisable
+pages/: écrans (Dashboard, Employés...)
+services/: appels API
+context/: gestion état global
+App.js: routing
+RBAC (Roles & Permissions)
+Admin: accès total
+Manager: gestion employés + clients
+Employé: accès limité (lecture / actions spécifiques)
+Modèles de données
+User: name, email, password, role
+Employee: name, position, salary, department
+Client: name, contact, historique
+Vehicle: marque, modele, prix, stock
+Sale: client, véhicule, montant, date
+Workflow Global
+Authentification
+Accès Dashboard
+Gestion modules
+Communication API
+Mise à jour base de données
+Plan de Développement
+Jour 1: Setup + Auth + DB
+Jour 2: CRUD employés + clients + véhicules
+Jour 3: Dashboard + ventes + finalisation
+Bonnes Pratiques Pro
+
+Hash passwords (bcrypt)
+Validation des données
+Middleware sécurité
+Code structuré et modulaire
+UI propre et responsive
