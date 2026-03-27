@@ -116,7 +116,7 @@ const Login = () => {
         <div className="auth-branding">
           <div className="auth-branding-content">
             <img
-              src="/src/assets/images/logo.png"
+              src="/public/logo.png"
               alt="HGASYS"
               className="auth-branding-logo"
               onError={(e) => {
