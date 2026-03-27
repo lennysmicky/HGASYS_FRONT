@@ -1,0 +1,421 @@
+/* ================================================
+   HGASYS - Styles Composants Spécifiques
+   CSS pur pour les composants complexes
+   ================================================ */
+
+@import './variables.css';
+
+/* ============================================
+   LOGIN PAGE
+   ============================================ */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sidebar-gradient);
+  padding: var(--spacing-4);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.login-header {
+  padding: var(--spacing-6) var(--spacing-6) var(--spacing-4);
+  text-align: center;
+}
+
+.login-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto var(--spacing-3);
+}
+
+.login-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.login-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.login-body {
+  padding: var(--spacing-4) var(--spacing-6) var(--spacing-6);
+}
+
+.login-footer {
+  padding: var(--spacing-4) var(--spacing-6);
+  background: var(--color-secondary-50);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* ============================================
+   DATA GRID CUSTOM
+   ============================================ */
+.data-grid-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+/* MUI DataGrid Override */
+.MuiDataGrid-root {
+  border: none !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size-sm) !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  background: var(--color-secondary-50) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 600 !important;
+  font-size: var(--font-size-xs) !important;
+  text-transform: uppercase !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid var(--color-secondary-100) !important;
+  font-size: var(--font-size-sm) !important;
+}
+
+.MuiDataGrid-row:hover {
+  background: rgba(123, 104, 238, 0.05) !important;
+}
+
+.MuiDataGrid-footerContainer {
+  border-top: 1px solid var(--color-border) !important;
+}
+
+/* ============================================
+   STAT WIDGET
+   ============================================ */
+.stat-widget {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.stat-widget-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+  font-size: 1.25rem;
+}
+
+.stat-widget-icon.primary {
+  background: rgba(123, 104, 238, 0.1);
+  color: var(--color-primary-500);
+}
+
+.stat-widget-icon.success {
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--color-success);
+}
+
+.stat-widget-icon.warning {
+  background: rgba(243, 156, 18, 0.1);
+  color: var(--color-warning);
+}
+
+.stat-widget-icon.danger {
+  background: rgba(231, 76, 60, 0.1);
+  color: var(--color-danger);
+}
+
+.stat-widget-content {
+  flex: 1;
+}
+
+.stat-widget-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.stat-widget-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-1);
+}
+
+/* ============================================
+   PROFILE CARD
+   ============================================ */
+.profile-card {
+  text-align: center;
+  padding: var(--spacing-6);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-4);
+  border-radius: 50%;
+  background: var(--color-primary-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.profile-name {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.profile-role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ============================================
+   INVOICE
+   ============================================ */
+.invoice-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-6);
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-6);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.invoice-logo {
+  height: 40px;
+}
+
+.invoice-info {
+  text-align: right;
+}
+
+.invoice-number {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-primary-500);
+}
+
+.invoice-table {
+  width: 100%;
+  margin: var(--spacing-6) 0;
+}
+
+.invoice-table th {
+  background: var(--color-secondary-50);
+  padding: var(--spacing-3);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.invoice-table td {
+  padding: var(--spacing-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.invoice-total {
+  text-align: right;
+  padding: var(--spacing-4);
+  background: var(--color-secondary-50);
+  border-radius: var(--border-radius);
+}
+
+.invoice-total-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-2);
+}
+
+.invoice-total-label {
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.invoice-total-value {
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 100px;
+  text-align: right;
+}
+
+.invoice-total-grand {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary-500);
+}
+
+/* ============================================
+   CALENDAR / DATE PICKER OVERRIDE
+   ============================================ */
+.MuiPickersLayout-root {
+  font-family: var(--font-family) !important;
+}
+
+.MuiDayCalendar-weekDayLabel {
+  font-size: var(--font-size-xs) !important;
+  color: var(--color-text-muted) !important;
+}
+
+.MuiPickersDay-root {
+  font-size: var(--font-size-sm) !important;
+}
+
+.MuiPickersDay-root.Mui-selected {
+  background: var(--color-primary-500) !important;
+}
+
+/* ============================================
+   NOTIFICATION ITEM
+   ============================================ */
+.notification-item {
+  display: flex;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+  border-radius: var(--border-radius);
+  transition: background var(--transition-fast) ease;
+}
+
+.notification-item:hover {
+  background: var(--color-secondary-50);
+}
+
+.notification-item.unread {
+  background: rgba(123, 104, 238, 0.05);
+}
+
+.notification-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-title {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.notification-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification-time {
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-muted);
+}
+
+/* ============================================
+   TIMELINE
+   ============================================ */
+.timeline {
+  position: relative;
+  padding-left: var(--spacing-6);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--spacing-4);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 2px solid var(--color-primary-500);
+}
+
+.timeline-item.completed::before {
+  background: var(--color-primary-500);
+}
+
+.timeline-content {
+  background: var(--color-surface);
+  padding: var(--spacing-3);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.timeline-title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.timeline-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.timeline-date {
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-2);
+}

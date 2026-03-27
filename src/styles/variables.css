@@ -1,0 +1,38 @@
+/* ================================================
+   HGASYS - CSS Custom Properties
+   ================================================ */
+
+:root {
+  /* Sidebar */
+  --sidebar-dark: #2c1e4a;
+  --sidebar-light: #1a2f4e;
+  --sidebar-gradient: linear-gradient(145deg, #2c1e4a, #1a2f4e);
+  
+  /* Primary */
+  --color-primary: #7b68ee;
+  --color-primary-light: #f5f3ff;
+  
+  /* Success/Warning/Danger */
+  --color-success: #2ecc71;
+  --color-warning: #f39c12;
+  --color-danger: #e74c3c;
+  
+  /* Background */
+  --color-background: #f4f7fc;
+  --color-surface: #ffffff;
+  --color-border: #edf2f7;
+  
+  /* Text */
+  --color-text-primary: #1a2c3e;
+  --color-text-secondary: #5f7f9e;
+  --color-text-muted: #8ba0b5;
+  
+  /* Layout */
+  --sidebar-width: 260px;
+  --topbar-height: 52px;
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-base: 200ms;
+  --transition-slow: 250ms;
+}
